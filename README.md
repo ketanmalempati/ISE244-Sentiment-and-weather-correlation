@@ -41,7 +41,7 @@ The implementation plan involves the following steps:
 To find the correlation between weather and sentiment I would be using multiple machine models like decision tree, XGBOOST, Random Forest, Neural Networks, and Ensemble model. I will be applying all these techniques on two datasets i.e. tweets based on Bangalore and San Jose. In the end, I will be evaluating and comparing all the models using metrics like accuracy, precision, recall, and F1-Score. 
 The models I have used are mainly used for classification as the main objective of this project is to classify the sentiments based on the weather patterns. 
 
-Decision Tree
+### Decision Tree
 
 The decision tree is used for classifying the data based on the criteria it finds the most important. It can also handle categorical data which is very helpful.
 In this project, I am using a decision tree to find the sentiment based on weather details and find the weather condition based on the previous sentiment probability for both the datasets. 
@@ -50,22 +50,21 @@ Then I also used grid search for hyperparameters tuning which gives a slightly b
 
 ![image](https://github.com/ketanmalempati/ISE244-Sentiment-and-weather-correlation/assets/57043103/19f3b95d-745b-45ba-bcf9-d6b2dfcc9830)
 
-XGBoost
+### XGBoost
+
 XGBoost, which stands for Extreme Gradient Boosting, is a scalable, distributed gradient-boosted decision tree (GBDT) machine learning library. It provides parallel tree boosting and is the leading machine learning library for regression, classification, and ranking problems. 
 
 For using XGBOOST I had to convert the categorical data to numeric as they don’t work with categorical data. They are slower compared to decision trees as they have a much more complex architecture.
 
 ![image](https://github.com/ketanmalempati/ISE244-Sentiment-and-weather-correlation/assets/57043103/0403b30b-367b-48a3-a271-1bb54810e42f)
 
-
-
-Random Forest
+### Random Forest
 
 Random forests or random decision forests are an ensemble learning method for classification, regression and other tasks that operates by constructing a multitude of decision trees at training time. For classification tasks, the output of the random forest is the class selected by most trees. 
 
 ![image](https://github.com/ketanmalempati/ISE244-Sentiment-and-weather-correlation/assets/57043103/6ddf84df-5d27-4e09-8bfa-f9fff575eb79)
 
-Neural Networks
+### Neural Networks
 
 Neural networks, also known as artificial neural networks (ANNs) or simulated neural networks (SNNs), are a subset of machine learning and are at the heart of deep learning algorithms. 
 
@@ -74,17 +73,15 @@ I am using neural networks for this because it can find some unseen correlations
 
 ![image](https://github.com/ketanmalempati/ISE244-Sentiment-and-weather-correlation/assets/57043103/ac4f28aa-66b3-46af-854e-3b1e8a3bd1ba)
 
-Ensemble Model
+### Ensemble Model
 
 Ensembling involves combining all the models and getting a better result from the output of all the models. Here I am using all the above models discussed above and combining them and using the output from those models and sending the ensemble model to get a better understanding of the data.
 
 
-RESULTS
+# RESULTS
 
 Predicting weather conditions based on the sentiment
 
 When looking at the results we can see that both the datasets have very similar scores. But the Bangalore dataset performs better compared to the the San Jose dataset in both models.
 
 ![image](https://github.com/ketanmalempati/ISE244-Sentiment-and-weather-correlation/assets/57043103/9006b5a8-2d40-460f-b9c4-273d54c62472)
-
-
